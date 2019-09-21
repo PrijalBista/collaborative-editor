@@ -8,7 +8,7 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public', 'index.html'));
 });
-const server = app.listen( 8080, () => console.log('listening in http:localhost:3000') );
+const server = app.listen( process.env.PORT || 3000, () => console.log('server up and running') );
 
 const io = socket(server);
 
