@@ -1,0 +1,9 @@
+.container {
+    background-color: red;
+
+}
+
+#editor {
+    height: 80vh;
+    background-color: #cecece;
+}

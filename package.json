@@ -1,0 +1,15 @@
+{
+  "name": "collaborativeeditor",
+  "version": "1.0.0",
+  "description": "yet another handy collaborative editor ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Prijal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
