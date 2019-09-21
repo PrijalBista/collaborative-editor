@@ -1,4 +1,4 @@
-const socket = io.connect("http://192.168.1.162:3000");
+const socket = io();
 
 let editor = CodeMirror(document.body, {
   value: "#include <stdio.h>\n \nint main(){\n \n}",
