@@ -28,3 +28,9 @@ socket.on('newUser', updateContent);
 
 // When any other client makes changes to the content update the editor with updatedContent
 socket.on('other-client-edited-content', updateContent);
+
+// set language change event listener
+let setlang = document.getElementById('setLanguage');
+setlang.addEventListener('change', () => {
+  editor.setOption('mode', setlang.options[setlang.selectedIndex].value);
+});

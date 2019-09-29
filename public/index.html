@@ -4,10 +4,26 @@
         <script src="js/socket.io.slim.js" ></script>
         <script src="codeMirror/lib/codemirror.js"></script>
         <link rel="stylesheet" href="codeMirror/lib/codemirror.css">
-        <script src="codeMirror/mode/javascript/javascript.js"></script>
         <script src="codeMirror/mode/clike/clike.js"></script>
+        <script src="codeMirror/mode/javascript/javascript.js"></script>
+        <script src="codeMirror/mode/python/python.js"></script>
         <script src="js/app.js" defer ></script>
+        <style type="text/css">
+            #setLanguage {
+                padding: 5px;
+                border: none;
+                position: relative;
+                left: 80%;
+            }
+        </style>
     </head>
     <body>
+        <div class="settings">
+            <select id="setLanguage">
+                <option value="text/x-c++src">C/C++</option>
+                <option value="javascript">Javascript</option>
+                <option value="python">Python</option>
+            </select>
+        </div>
     </body>
 </html>
