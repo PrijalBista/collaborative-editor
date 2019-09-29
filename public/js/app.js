@@ -17,7 +17,11 @@ editor.on('keyup', handleContentChange );
 
 updateContent= data => {
 	if(data.text=='') return;
+	let cursorPosition = editor.getCursor();
+    
     editor.setValue(data.text);
+    
+    editor.setCursor(cursorPosition);
 }
 // When opened for the first time update editor with existing data
 socket.on('newUser', updateContent);
